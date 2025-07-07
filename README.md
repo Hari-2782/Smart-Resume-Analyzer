@@ -51,7 +51,7 @@ Visit [http://localhost:5000](http://localhost:5000) in your browser.
 - spacy
 
 ## License
-y
+MIT License
 
 ## Author
 Harisanth v
