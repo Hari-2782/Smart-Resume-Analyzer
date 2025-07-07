@@ -1,0 +1,116 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #181a1b !important;
+    min-height: 100vh;
+}
+
+/* Title */
+h2, .card-title {
+    font-size: 26px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Form Container */
+form {
+    background: white;
+    padding: 25px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Input Fields */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #2980b9;
+    outline: none;
+    box-shadow: 0 0 8px rgba(41, 128, 185, 0.2);
+}
+
+/* File Input */
+input[type="file"] {
+    background: #ecf0f1;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Submit Button */
+button {
+    background: #2980b9;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #2471a3;
+    transform: scale(1.05);
+}
+
+/* Score Display */
+h3 {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #27ae60;
+    font-weight: 600;
+    animation: popUp 0.5s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes popUp {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* Custom tweaks for Quill editor */
+#quill-editor {
+    border-radius: 0.5rem;
+    min-height: 350px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+        padding: 20px;
+    }
+    .card {
+        margin: 0 5px;
+    }
+}
